@@ -11,11 +11,11 @@ src(){
 }
 
 
-youtube_chromium_base_app(){
+ytube_chromium_base_app(){
     chromium --app=https://www.youtube.com
 }
 
-youtube_chromium_min_base_app(){
+ytube_chromium_min_base_app(){
     chromium --app=https://www.youtube.com \
     --process-per-site \
     --disable-extensions \
@@ -25,12 +25,12 @@ youtube_chromium_min_base_app(){
 }
 
 
-youtube_chromium_tmp(){
+ytube_chromium_tmp(){
     chromium --app=https://www.youtube.com --user-data-dir=/tmp/youtube-app
 }
 
 
-youtube_chromium_limit_base(){
+ytube_chromium_limit_base(){
     chromium --app=https://www.youtube.com \
     --user-data-dir=/tmp/youtube-app \
     --disable-extensions \
@@ -40,8 +40,30 @@ youtube_chromium_limit_base(){
 }
 
 
-youtube_chromium_exp(){
+ytube_chromium_exp(){
     chromium --app=https://piped.video
 }
 
 
+#chromium --new-window https://www.youtube.com
+
+#chromium --new-window https://www.youtube.com \
+#--process-per-site \
+#--disable-extensions \
+#--disable-sync \
+#--disable-notifications \
+#--disable-background-networking
+
+#chromium --window-size=1200,800 --new-window https://www.youtube.com
+
+#chromium --new-window https://www.youtube.com \
+#--force-effective-connection-type=2G
+
+#chromium --new-window https://www.youtube.com \
+#--window-size=1200,800 \
+#--process-per-site \
+#--disable-extensions \
+#--disable-sync \
+#--disable-notifications \
+#--disable-background-networking \
+#--force-effective-connection-type=2G
